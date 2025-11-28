@@ -1,4 +1,4 @@
-# @ras-sh/template-tanstack-start
+# template-tanstack-start
 
 🚀 Full-stack template with TanStack Start. Includes SSR, file-based routing, and modern tooling.
 

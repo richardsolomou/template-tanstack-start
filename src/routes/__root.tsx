@@ -17,9 +17,9 @@ export const Route = createRootRoute({
         content: "width=device-width, initial-scale=1",
       },
       ...seo({
-        title: "ras.sh",
+        title: "template-tanstack-start",
         description:
-          "A collection of side projects, experiments, and tools built with modern technologies",
+          "🚀 Full-stack template with TanStack Start. Includes SSR, file-based routing, and modern tooling.",
       }),
     ],
     links: [
