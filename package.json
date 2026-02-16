@@ -32,13 +32,13 @@
     "@fontsource-variable/geist": "^5.2.8",
     "@fontsource-variable/geist-mono": "^5.2.7",
     "@ras-sh/ui": "^0.0.6",
-    "@tanstack/react-router": "^1.160.0",
-    "@tanstack/react-start": "^1.160.0",
+    "@tanstack/react-router": "^1.160.2",
+    "@tanstack/react-start": "^1.160.2",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.0",
+    "@biomejs/biome": "^2.4.1",
     "@ras-sh/typescript-config": "^0.0.3",
     "@tailwindcss/vite": "^4.1.18",
     "@types/node": "^25.2.3",
@@ -49,7 +49,7 @@
     "nitro": "3.0.1-alpha.2",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3",
-    "ultracite": "7.2.2",
+    "ultracite": "7.2.3",
     "vite": "^7.3.1",
     "vite-tsconfig-paths": "^6.1.1"
   }
