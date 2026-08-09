@@ -60,10 +60,7 @@ function TodoItem({
 }) {
   return (
     <div className="group flex items-center gap-3 rounded-lg border border-zinc-800 bg-zinc-900/50 p-4 transition-colors hover:border-zinc-700 hover:bg-zinc-900/70">
-      <Checkbox
-        checked={todo.isCompleted}
-        onCheckedChange={() => onToggle(todo.id)}
-      />
+      <Checkbox checked={todo.isCompleted} onCheckedChange={() => onToggle(todo.id)} />
       <span
         className={`flex-1 text-sm transition-colors ${
           todo.isCompleted ? "text-zinc-500 line-through" : "text-zinc-200"
@@ -87,9 +84,7 @@ function EmptyState() {
   return (
     <div className="flex flex-col items-center justify-center gap-2 rounded-lg border border-zinc-800 border-dashed bg-zinc-900/30 py-12">
       <p className="font-medium text-sm text-zinc-400">No todos yet</p>
-      <p className="text-xs text-zinc-500">
-        Add your first todo to get started
-      </p>
+      <p className="text-xs text-zinc-500">Add your first todo to get started</p>
     </div>
   );
 }
@@ -110,12 +105,7 @@ function TodoList({
   return (
     <div className="space-y-2">
       {todos.map((todo) => (
-        <TodoItem
-          key={todo.id}
-          onDelete={onDelete}
-          onToggle={onToggle}
-          todo={todo}
-        />
+        <TodoItem key={todo.id} onDelete={onDelete} onToggle={onToggle} todo={todo} />
       ))}
     </div>
   );
@@ -135,9 +125,7 @@ export default function Home() {
 
   const toggleTodo = (id: string) => {
     setTodos(
-      todos.map((todo) =>
-        todo.id === id ? { ...todo, isCompleted: !todo.isCompleted } : todo
-      )
+      todos.map((todo) => (todo.id === id ? { ...todo, isCompleted: !todo.isCompleted } : todo)),
     );
   };
 
@@ -153,14 +141,11 @@ export default function Home() {
             <Badge variant="secondary">Template</Badge>
             <Badge variant="outline">v{packageJson.version}</Badge>
           </div>
-          <h1 className="mb-8 font-bold text-4xl tracking-tight">
-            🚀 TanStack Start Template
-          </h1>
+          <h1 className="mb-8 font-bold text-4xl tracking-tight">🚀 TanStack Start Template</h1>
 
           <div className="space-y-4">
             <p className="text-lg text-zinc-300 leading-relaxed">
-              A production-ready template for building full-stack applications
-              with{" "}
+              A production-ready template for building full-stack applications with{" "}
               <a
                 className="underline transition-colors hover:text-zinc-100"
                 href="https://tanstack.com/start"
@@ -173,9 +158,7 @@ export default function Home() {
             </p>
             <p className="text-sm text-zinc-400">
               Start building by editing{" "}
-              <code className="rounded bg-zinc-800 px-2 py-1 text-sm">
-                src/routes/index.tsx
-              </code>
+              <code className="rounded bg-zinc-800 px-2 py-1 text-sm">src/routes/index.tsx</code>
             </p>
           </div>
         </section>
@@ -200,11 +183,7 @@ export default function Home() {
             <CardContent>
               <div className="space-y-4">
                 <TodoForm onAdd={addTodo} />
-                <TodoList
-                  onDelete={deleteTodo}
-                  onToggle={toggleTodo}
-                  todos={todos}
-                />
+                <TodoList onDelete={deleteTodo} onToggle={toggleTodo} todos={todos} />
               </div>
             </CardContent>
           </Card>
