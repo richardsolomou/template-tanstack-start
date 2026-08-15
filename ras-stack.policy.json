@@ -1,6 +1,4 @@
 {
   "dependabot": true,
-  "pnpm": {
-    "minimumReleaseAge": 0
-  }
+  "pnpm": {}
 }
